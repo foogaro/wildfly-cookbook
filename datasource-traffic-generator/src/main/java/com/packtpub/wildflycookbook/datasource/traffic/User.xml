@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.packtpub.wildflycookbook.datasource.traffic.User">
+        <table name="user" schema="" catalog="wildflycookbook"/>
+        <attributes>
+            <id name="id">
+                <column name="id" nullable="false" precision="19"/>
+            </id>
+            <basic name="firstname">
+                <column name="firstname" nullable="false" length="100"/>
+            </basic>
+            <basic name="lastname">
+                <column name="lastname" nullable="false" length="100"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false"/>
+            </basic>
+            <basic name="phone">
+                <column name="phone" length="50"/>
+            </basic>
+            <basic name="nickname">
+                <column name="nickname" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
