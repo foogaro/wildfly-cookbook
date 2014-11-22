@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <!-- <context-root>/sslexample</context-root> -->
+    <server-instance>secure-server</server-instance>
+    <virtual-host>secure-host</virtual-host>
+</jboss-web>
