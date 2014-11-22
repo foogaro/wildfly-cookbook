@@ -4,10 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Index</title>
+    <title>WildFly::Cookbook</title>
 </head>
 <body>
-<b>Welcome, this ie Example from chapter 2!</b>
+<b>Welcome, you are using the HTTP protocol. Watch your back!</b>
 </body>
 </html>
 	
