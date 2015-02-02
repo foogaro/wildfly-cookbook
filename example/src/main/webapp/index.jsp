@@ -8,6 +8,9 @@
 </head>
 <body>
 <b>Welcome, you are using the HTTP protocol. Watch your back!</b>
+<%
+    System.out.println("<--");
+%>
 </body>
 </html>
 	
