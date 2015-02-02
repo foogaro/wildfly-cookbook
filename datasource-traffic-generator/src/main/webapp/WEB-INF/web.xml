@@ -6,7 +6,7 @@
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>com.packtpub.wildflycookbook.datasource.traffic.UserServlet</servlet-class>
+        <servlet-class>com.packtpub.wildflycookbook.vault.UserServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

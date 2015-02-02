@@ -4,12 +4,8 @@
     <persistence-unit name="WildFlyCookBookPU" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/WildFlyCookbookDS</jta-data-source>
-        <class>com.packtpub.wildflycookbook.datasource.traffic.User</class>
+        <class>com.packtpub.wildflycookbook.vault.User</class>
         <properties>
-            <!--<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/wildflycookbook"/>-->
-            <!--<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>-->
-            <!--<property name="hibernate.connection.username" value="root"/>-->
-            <!--<property name="hibernate.connection.password" value="luigi2014"/>-->
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="true"/>
