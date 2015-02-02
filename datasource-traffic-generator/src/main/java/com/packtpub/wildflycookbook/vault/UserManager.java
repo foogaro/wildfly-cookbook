@@ -1,4 +1,4 @@
-package com.packtpub.wildflycookbook.datasource.traffic;
+package com.packtpub.wildflycookbook.vault;
 
 import javax.ejb.*;
 import javax.persistence.EntityManager;

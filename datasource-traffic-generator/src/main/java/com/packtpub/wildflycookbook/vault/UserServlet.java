@@ -1,8 +1,7 @@
-package com.packtpub.wildflycookbook.datasource.traffic;
+package com.packtpub.wildflycookbook.vault;
 
 import org.fluttercode.datafactory.impl.DataFactory;
 
-import javax.ejb.Asynchronous;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
