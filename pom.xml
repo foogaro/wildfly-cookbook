@@ -11,13 +11,18 @@
         <module>balancing-test</module>
         <module>cluster-test</module>
         <module>datasource-traffic-generator</module>
+        <module>rbac-ldap</module>
+        <module>vault-db-test</module>
         <module>example</module>
+        <module>docker-example</module>
         <module>ssl-example</module>
         <module>modcluster-custom-load-metric</module>
         <module>logging</module>
         <module>logging-gzip-handler</module>
         <module>rolling-test</module>
         <module>system-properties</module>
+        <module>jms-producer</module>
+        <module>jms-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
