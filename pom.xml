@@ -16,6 +16,7 @@
         <module>example</module>
         <module>docker-example</module>
         <module>ssl-example</module>
+        <module>no-ssl-example</module>
         <module>modcluster-custom-load-metric</module>
         <module>logging</module>
         <module>logging-gzip-handler</module>
