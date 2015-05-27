@@ -1,0 +1,1 @@
+docker build --rm=true --file="mod_cluster-1.2.6.dockerfile" --tag="foogaro/mod_cluster-1.2.6" .

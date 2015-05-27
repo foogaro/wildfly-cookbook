@@ -1,0 +1,1 @@
+docker build --rm=true --file="httpd-2.2.dockerfile" --tag="foogaro/httpd-2.2" .

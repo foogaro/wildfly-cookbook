@@ -1,0 +1,1 @@
+docker run -p 80:80 -p 6666:6666 --net=host -d foogaro/mod_cluster-1.2.6
