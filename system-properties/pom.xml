@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>jboss-javaee-7.0-with-all</artifactId>
-                <version>${version.jboss.bom}</version>
+                <version>${jboss.bom}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
