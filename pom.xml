@@ -11,8 +11,6 @@
         <module>balancing-test</module>
         <module>cluster-test</module>
         <module>datasource-traffic-generator</module>
-        <module>rbac-ldap</module>
-        <module>vault-db-test</module>
         <module>example</module>
         <module>docker-example</module>
         <module>ssl-example</module>
@@ -31,15 +29,18 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.jboss.bom>8.1.0.Final</version.jboss.bom>
+        <version.jboss.bom>8.2.1.Final</version.jboss.bom>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.wildfly.bom</groupId>
+                <!-- <groupId>org.wildfly.bom</groupId>
                 <artifactId>jboss-javaee-7.0-with-all</artifactId>
-                <version>8.1.0.Final</version>
+                <version>8.2.1.Final</version> -->
+                <groupId>org.wildfly</groupId>
+                <artifactId>wildfly-parent</artifactId>
+                <version>9.0.0.CR2-SNAPSHOT</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
