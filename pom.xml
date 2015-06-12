@@ -29,7 +29,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.jboss.bom>8.2.1.Final</version.jboss.bom>
+        <jboss.bom>9.0.0.CR2-SNAPSHOT</jboss.bom>
     </properties>
 
     <dependencyManagement>
@@ -40,7 +40,7 @@
                 <version>8.2.1.Final</version> -->
                 <groupId>org.wildfly</groupId>
                 <artifactId>wildfly-parent</artifactId>
-                <version>9.0.0.CR2-SNAPSHOT</version>
+                <version>${jboss.bom}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
