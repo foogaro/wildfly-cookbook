@@ -1,0 +1,181 @@
+# This is the root of the directory tree
+dn: dc=example,dc=com
+description: Example.Com, your trusted non-existent corporation.
+dc: example
+o: Example.Com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+
+# Subtree for users
+dn: ou=Users,dc=example,dc=com
+ou: Users
+description: Example.Com Users
+objectClass: organizationalUnit
+
+# Subtree for groups
+dn: ou=Groups,dc=example,dc=com
+ou: Groups
+description: Example.Com Groups
+objectClass: organizationalUnit
+
+# Subtree for system accounts
+dn: ou=System,dc=example,dc=com
+ou: System
+description: Special accounts used by software applications.
+objectClass: organizationalUnit
+
+# Luigi Fugaro:
+dn: uid=lfugaro,ou=Users,dc=example,dc=com
+ou: Users
+uid: lfugaro
+sn: Fugaro
+cn: Luigi Fugaro
+givenName: Luigi
+displayName: Luigi Fugaro
+mail: lfugaro@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+# Fabio Marinelli:
+dn: uid=fmarinelli,ou=Users,dc=example,dc=com
+ou: Users
+uid: fmarinelli
+sn: Marinelli
+cn: Fabio Marinelli
+givenName: Fabio
+displayName: Fabio Marinelli
+mail: fmarinelli@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+# Stefano Linguerri:
+dn: uid=slinguerri,ou=Users,dc=example,dc=com
+ou: Users
+uid: slinguerri
+sn: Linguerri
+cn: Stefano Linguerri
+givenName: Stefano
+displayName: Stefano Linguerri
+mail: slinguerri@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+# User Tests:
+dn: uid=user1,ou=Users,dc=example,dc=com
+ou: Users
+uid: user1
+sn: Test
+cn: User Test
+givenName: User
+displayName: User Test
+mail: user1@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+dn: uid=user2,ou=Users,dc=example,dc=com
+ou: Users
+uid: user2
+sn: Test
+cn: User Test
+givenName: User
+displayName: User Test
+mail: user2@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+dn: uid=user3,ou=Users,dc=example,dc=com
+ou: Users
+uid: user3
+sn: Test
+cn: User Test
+givenName: User
+displayName: User Test
+mail: user3@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+dn: uid=user4,ou=Users,dc=example,dc=com
+ou: Users
+uid: user4
+sn: Test
+cn: User Test
+givenName: User
+displayName: User Test
+mail: user4@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+dn: uid=user5,ou=Users,dc=example,dc=com
+ou: Users
+uid: user5
+sn: Test
+cn: User Test
+givenName: User
+displayName: User Test
+mail: user5@example.com
+userPassword: secret
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+# LDAP Admin Group:
+dn: cn=LDAP Admins,ou=Groups,dc=example,dc=com
+cn: LDAP Admins
+ou: Groups
+description: Users who are LDAP administrators
+uniqueMember: uid=lfugaro,dc=example,dc=com
+uniqueMember: uid=fmarinelli,dc=example,dc=com
+uniqueMember: uid=slinguerri,dc=example,dc=com
+objectClass: groupOfUniqueNames
+
+# Special Account for Authentication:
+dn: uid=authenticate,ou=System,dc=example,dc=com
+uid: authenticate
+ou: System
+description: Special account for authenticating users
+userPassword: secret
+objectClass: account
+objectClass: simpleSecurityObject
+
+# Development Group:
+dn: cn=Developers,ou=Groups,dc=example,dc=com
+cn: Developers
+ou: Groups
+description: Users who are Developers
+uniqueMember: uid=user1,dc=example,dc=com
+uniqueMember: uid=user3,dc=example,dc=com
+uniqueMember: uid=user5,dc=example,dc=com
+objectClass: groupOfUniqueNames
+
+# Operational Group:
+dn: cn=Operational,ou=Groups,dc=example,dc=com
+cn: Operational
+ou: Groups
+description: Users who are Operational
+uniqueMember: uid=user1,dc=example,dc=com
+uniqueMember: uid=user2,dc=example,dc=com
+objectClass: groupOfUniqueNames
+
+# Project Manager Group:
+dn: cn=Project Manager,ou=Groups,dc=example,dc=com
+cn: Project Manager
+ou: Groups
+description: Users who are Operational
+uniqueMember: uid=user4,dc=example,dc=com
+objectClass: groupOfUniqueNames
+
