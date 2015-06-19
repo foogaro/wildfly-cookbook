@@ -138,9 +138,9 @@ dn: cn=LDAP Admins,ou=Groups,dc=example,dc=com
 cn: LDAP Admins
 ou: Groups
 description: Users who are LDAP administrators
-uniqueMember: uid=lfugaro,dc=example,dc=com
-uniqueMember: uid=fmarinelli,dc=example,dc=com
-uniqueMember: uid=slinguerri,dc=example,dc=com
+uniqueMember: uid=lfugaro,ou=Users,dc=example,dc=com
+uniqueMember: uid=fmarinelli,ou=Users,dc=example,dc=com
+uniqueMember: uid=slinguerri,ou=Users,dc=example,dc=com
 objectClass: groupOfUniqueNames
 
 # Special Account for Authentication:
@@ -157,9 +157,9 @@ dn: cn=Developers,ou=Groups,dc=example,dc=com
 cn: Developers
 ou: Groups
 description: Users who are Developers
-uniqueMember: uid=user1,dc=example,dc=com
-uniqueMember: uid=user3,dc=example,dc=com
-uniqueMember: uid=user5,dc=example,dc=com
+uniqueMember: uid=user1,ou=Users,dc=example,dc=com
+uniqueMember: uid=user3,ou=Users,dc=example,dc=com
+uniqueMember: uid=user5,ou=Users,dc=example,dc=com
 objectClass: groupOfUniqueNames
 
 # Operational Group:
@@ -167,8 +167,8 @@ dn: cn=Operational,ou=Groups,dc=example,dc=com
 cn: Operational
 ou: Groups
 description: Users who are Operational
-uniqueMember: uid=user1,dc=example,dc=com
-uniqueMember: uid=user2,dc=example,dc=com
+uniqueMember: uid=user1,ou=Users,dc=example,dc=com
+uniqueMember: uid=user2,ou=Users,dc=example,dc=com
 objectClass: groupOfUniqueNames
 
 # Project Manager Group:
@@ -176,6 +176,6 @@ dn: cn=Project Manager,ou=Groups,dc=example,dc=com
 cn: Project Manager
 ou: Groups
 description: Users who are Operational
-uniqueMember: uid=user4,dc=example,dc=com
+uniqueMember: uid=user4,ou=Users,dc=example,dc=com
 objectClass: groupOfUniqueNames
 
