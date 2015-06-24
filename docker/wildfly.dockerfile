@@ -11,6 +11,10 @@ RUN yum -y install tar unzip wget telnet net-tools
 # Make sure the distribution is available from a well-known place
 RUN cd /opt && curl http://download.jboss.org/wildfly/9.0.0.Beta2/wildfly-9.0.0.Beta2.tar.gz | tar zx
 
+RUN yum -y install iproute
+
+ENV IPADDR $(ip a s | sed -ne '/127.0.0.1/!{s/^[ \t]*inet[ \t]*\([0-9.]\+\)\/.*$/\1/p}')
+
 # Add the Wildfly distribution to /opt
 RUN ln -s /opt/wildfly-9.0.0.Beta2 /opt/wildfly
 
