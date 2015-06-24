@@ -22,6 +22,7 @@
         <module>system-properties</module>
         <module>jms-producer</module>
         <module>jms-consumer</module>
+	<module>cluster-jms-replication</module>
     </modules>
     <packaging>pom</packaging>
 
