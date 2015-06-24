@@ -120,6 +120,5 @@ The node2 recieve message 2, 4, 5, 6, 7, 8, 9, 10
 
 * Change the Application User to match the style of book(current is democlient/password1! which it be hard coded in JMSClient)
 * Convert the XML file to CLI
-* Some exist issue
 
 
