@@ -21,8 +21,8 @@ public class JMSClient {
 		final Properties env = new Properties();
 		env.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
 		env.put(Context.PROVIDER_URL, "http-remoting://127.0.0.1:8080");
-		env.put(Context.SECURITY_PRINCIPAL,"democlient");
-		env.put(Context.SECURITY_CREDENTIALS,"password1!");
+		env.put(Context.SECURITY_PRINCIPAL,"jmsuser");
+		env.put(Context.SECURITY_CREDENTIALS,"jmsuser.2015");
 
 		return new InitialContext(env);
 	}
@@ -46,7 +46,7 @@ public class JMSClient {
 			destination = (Destination) context.lookup("jms/queue/DistributedQueue");
 			System.out.println("Acquiring destination success, " + destination);
 			
-			connection = connectionFactory.createConnection("democlient", "password1!");
+			connection = connectionFactory.createConnection("jmsuser", "jmsuser.2015");
 			System.out.println("Creating connection success, " + connection);
 			
 			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);

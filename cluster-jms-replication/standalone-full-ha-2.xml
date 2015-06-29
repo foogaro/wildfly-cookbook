@@ -33,7 +33,6 @@
         <extension module="org.wildfly.extension.request-controller"/>
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
-        <extension module="org.wildfly.iiop-openjdk"/>
     </extensions>
 
 
@@ -262,10 +261,6 @@
                 <replicated-cache name="timestamps" mode="ASYNC"/>
             </cache-container>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:iiop-openjdk:1.0">
-            <orb socket-binding="iiop" ssl-socket-binding="iiop-ssl"/>
-            <initializers security="identity" transactions="spec"/>
-        </subsystem>
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
         <subsystem xmlns="urn:jboss:domain:jca:3.0">
             <archive-validation enabled="true" fail-on-error="true" fail-on-warn="false"/>
@@ -343,7 +338,8 @@
         <subsystem xmlns="urn:jboss:domain:messaging:3.0">
             <hornetq-server>
                 <persistence-enabled>true</persistence-enabled>
-                <cluster-password>clusterPassword1!</cluster-password>
+                <cluster-user>us3r</cluster-user>
+                <cluster-password>p@ssw0rd</cluster-password>
                 <backup>false</backup>
                 <allow-failback>true</allow-failback>
                 <failover-on-shutdown>false</failover-on-shutdown>
@@ -461,7 +457,8 @@
             </hornetq-server>
             <hornetq-server name="backup-server">
                 <persistence-enabled>true</persistence-enabled>
-                <cluster-password>clusterPassword1!</cluster-password>
+                <cluster-user>us3r</cluster-user>
+                <cluster-password>p@ssw0rd</cluster-password>
                 <backup>true</backup>
                 <allow-failback>true</allow-failback>
                 <failover-on-shutdown>false</failover-on-shutdown>
