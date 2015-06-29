@@ -1,0 +1,17 @@
+Attempting to acquire connection factory "jms/RemoteConnectionFactory"
+Found connection factory "jms/RemoteConnectionFactory" in JNDI
+Attempting to acquire destination "jms/queue/test"
+Found destination "jms/queue/test" in JNDI
+Receiving messages with content: 0A message by WildFly Cookbook
+Receiving messages with content: 1A message by WildFly Cookbook
+Receiving messages with content: 2A message by WildFly Cookbook
+Jun 29, 2015 6:19:46 PM org.hornetq.core.protocol.core.impl.RemotingConnectionImpl fail
+WARN: HQ212037: Connection failure has been detected: HQ119015: The connection was disconnected
+ because of server shutdown [code=DISCONNECTED]
+Receiving messages with content: 3A message by WildFly Cookbook
+Receiving messages with content: 4A message by WildFly Cookbook
+Receiving messages with content: 5A message by WildFly Cookbook
+Receiving messages with content: 6A message by WildFly Cookbook
+Receiving messages with content: 7A message by WildFly Cookbook
+Receiving messages with content: 8A message by WildFly Cookbook
+Receiving messages with content: 9A message by WildFly Cookbook

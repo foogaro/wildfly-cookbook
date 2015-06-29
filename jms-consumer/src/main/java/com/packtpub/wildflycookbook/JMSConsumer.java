@@ -13,7 +13,7 @@ public class JMSConsumer {
     private static final String DEFAULT_USERNAME = "jmsuser";
     private static final String DEFAULT_PASSWORD = "jmsuser.2015";
     private static final String INITIAL_CONTEXT_FACTORY = "org.jboss.naming.remote.client.InitialContextFactory";
-    private static final String PROVIDER_URL = "http-remoting://localhost:8080";
+    private static final String PROVIDER_URL = "http-remoting://localhost:8180";
 
     public static void main(String[] args) throws Exception {
         ConnectionFactory connectionFactory = null;
@@ -50,10 +50,10 @@ public class JMSConsumer {
             connection.start();
 
             do {
-                message = (TextMessage)consumer.receiveNoWait();
+                try {message = (TextMessage)consumer.receiveNoWait();} catch (javax.jms.IllegalStateException ise) {ise.printStackTrace(); Thread.sleep(3000);message = (TextMessage)consumer.receiveNoWait();}
                 if (message != null) {
                     System.out.println("Receiving messages with content: " + message.getText());
-                    Thread.sleep(250);
+                    Thread.sleep(1000);
                 }
             } while (message != null);
 

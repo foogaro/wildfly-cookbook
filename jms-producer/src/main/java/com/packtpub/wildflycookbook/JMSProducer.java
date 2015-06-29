@@ -13,7 +13,7 @@ public class JMSProducer {
     private static final String DEFAULT_USERNAME = "jmsuser";
     private static final String DEFAULT_PASSWORD = "jmsuser.2015";
     private static final String INITIAL_CONTEXT_FACTORY = "org.jboss.naming.remote.client.InitialContextFactory";
-    private static final String PROVIDER_URL = "http-remoting://localhost:8080";
+    private static final String PROVIDER_URL = "http-remoting://localhost:8180";
 
     public static void main(String[] args) throws Exception {
         final StringBuilder msg = new StringBuilder();
@@ -67,6 +67,8 @@ public class JMSProducer {
             for (int i = 0; i < NUM_OF_MESSAGES; i++) {
                 message = session.createTextMessage(i+msg.toString());
                 producer.send(message);
+                System.out.println("\t\tSending messages with content ["+i+"]: " + msg.toString());
+                Thread.sleep(1000);
             }
 
         } catch (Exception e) {
