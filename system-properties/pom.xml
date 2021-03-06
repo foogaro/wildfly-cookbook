@@ -49,12 +49,12 @@
             <artifactId>jboss-servlet-api_3.1_spec</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!-- Test vulnerabilidad -->
+        <!-- Test vulnerabilidad
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
             <version>1.8.2</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
