@@ -1,4 +1,5 @@
 <html>
+<title>Some application title</title>
 <body>
 
 <h2>WildFly::Cookbook::Balancing same context for different applications</h2>
