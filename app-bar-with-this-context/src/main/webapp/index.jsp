@@ -1,4 +1,5 @@
 <html>
+<title>Some application title</title>
 <body>
 
 <h2>WildFly::Cookbook::Balancing same context for different applications</h2>
@@ -13,6 +14,6 @@
 <h3>Who are you? I'm "app-bar-with-this-context"</h3>
 
 
-<h1>version 1.1</h1>
+<h1>version 1.1_dev</h1>
 </body>
 </html>
